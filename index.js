@@ -1,9 +1,11 @@
 const express = require("express");
 const fs = require("fs");
 const path = require("path");
+const uuid = require('./notes/uuid');
+
 const app = express();
 const port = 3000;
-const uuid = require('./notes/uuid');
+
 const dbFilePath = path.join(__dirname, "db", "notes.json");
 
 app.use(express.json());
