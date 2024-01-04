@@ -1,4 +1,3 @@
-module.exports = () =>
-  Math.floor((1 + Math.random()) * 0x10000)
-    .toString(16)
-    .substring(1);
+const { v4: uuidv4 } = require('uuid');
+
+module.exports = () => uuidv4();
