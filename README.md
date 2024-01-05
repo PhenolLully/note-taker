@@ -7,6 +7,41 @@ Your assignment is to modify starter code to create an application called Note T
 The application’s front end has already been created. It's your job to build the back end, connect the two, and then deploy the entire application to Heroku.
 
 
+Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
+
+
+- What was your motivation?
+My motivation was to be able to understand and create a note taker application
+- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
+I built this project in order to expand on my skills on Express.js and backend development
+- What problem does it solve?
+It solves the problem of creating a note taker to write and save notes.
+- What did you learn?
+I honestly learned more about Express.js and how to utilize it.
+
+
+## Installation
+
+What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+
+First a github repository needs to be created make sure it has a README.md file, then clone the repository and paste it in your Week 11 folder. Then open the developer folder in the class repository and copy the material inside the folder into the repository folder. Then you can continue work on the assignment.
+
+
+## Usage
+
+Provide instructions and examples for use. Include screenshots as needed.
+
+To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
+
+    ```md
+    ![alt text](assets/images/screenshot.png)
+    ```
+
+
+## Credits
+CHARLES PUENTE-MATOS ONE OF THE TUTORING TEACHERS ASSISTED ME ON PART OF THIS ASSIGNMENT!
+I DID USE YOUTUBE AND OTHER SITES TO HELP ME IMPLEMENT AND COME TO AN UNDERSTANDING OF CODE THAT I AM USING!!!
+
 ## User Story
 
 ```
@@ -33,40 +68,6 @@ THEN that note appears in the right-hand column
 WHEN I click on the Write icon in the navigation at the top of the page
 THEN I am presented with empty fields to enter a new note title and the note’s text in the right-hand column
 ```
-
-
-## Mock-Up
-
-The following images show the web application's appearance and functionality:
-
-![Existing notes are listed in the left-hand column with empty fields on the right-hand side for the new note’s title and text.](./Assets/11-express-homework-demo-01.png)
-
-![Note titled “Balance accounts” reads, “Balance account books by end of day Monday,” with other notes listed on the left.](./Assets/11-express-homework-demo-02.png)
-
-
-## Getting Started
-
-On the back end, the application should include a `db.json` file that will be used to store and retrieve notes using the `fs` module.
-
-The following HTML routes should be created:
-
-* `GET /notes` should return the `notes.html` file.
-
-* `GET *` should return the `index.html` file.
-
-The following API routes should be created:
-
-* `GET /api/notes` should read the `db.json` file and return all saved notes as JSON.
-
-* `POST /api/notes` should receive a new note to save on the request body, add it to the `db.json` file, and then return the new note to the client. You'll need to find a way to give each note a unique id when it's saved (look into npm packages that could do this for you).
-
-
-## Bonus
-
-You haven’t learned how to handle DELETE requests, but this application offers that functionality on the front end. As a bonus, try to add the DELETE route to the application using the following guideline:
-
-* `DELETE /api/notes/:id` should receive a query parameter that contains the id of a note to delete. To delete a note, you'll need to read all notes from the `db.json` file, remove the note with the given `id` property, and then rewrite the notes to the `db.json` file.
-
 
 ## Grading Requirements
 
